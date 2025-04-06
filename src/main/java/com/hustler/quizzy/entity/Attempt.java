@@ -5,21 +5,20 @@ import jakarta.persistence.*;
 
 @Entity
 @Data
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Submission {
+public class Attempt {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String ip_address;
-    private Integer score;
+    private String ip;
 
-    @ManyToOne
-    private Quiz quiz;
+    private int score;
 
     @ManyToOne
     private User student;
+
+    @ManyToOne
+    private Quiz quiz;
 }

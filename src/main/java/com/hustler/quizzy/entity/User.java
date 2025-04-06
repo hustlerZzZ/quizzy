@@ -1,7 +1,7 @@
 package com.hustler.quizzy.entity;
 
-import jakarta.persistence.*;
 import lombok.*;
+import jakarta.persistence.*;
 
 @Entity
 @Data
